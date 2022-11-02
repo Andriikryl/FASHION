@@ -94,6 +94,18 @@ select {
   margin-inline: auto;
 }
 
+/* SHADOW*/
+.blog-shadow {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.blog-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* SHADOW*/
 .header {
   padding-block: 34px;
 }
@@ -294,7 +306,8 @@ select {
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
 }
 .blog__card .blog__card-img {
-  padding-block: 15px;
+  -webkit-padding-after: 15px;
+          padding-block-end: 15px;
 }
 .blog__card .card-titel {
   font-family: "PT Sans";
@@ -322,6 +335,8 @@ select {
   font-size: 12px;
   line-height: 16px;
   color: #666666;
+  -webkit-padding-after: 14px;
+          padding-block-end: 14px;
 }
 
 .blog__card-full {
@@ -516,7 +531,7 @@ select {
           padding-block-end: 40px;
 }
 
-.marquee {
+.inst__box {
   display: flex;
   overflow: hidden;
   -webkit-user-select: none;
