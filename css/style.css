@@ -85,7 +85,7 @@ select {
   }
 }
 .container {
-  width: min(1250px, 100% - 1rem);
+  width: min(1189px, 100% - 1rem);
   margin-inline: auto;
 }
 
@@ -217,4 +217,46 @@ select {
     padding: 40px 30px;
   }
 }
-/**MOBILE-ADAPTIVE**//*# sourceMappingURL=style.css.map */
+/**MOBILE-ADAPTIVE**/
+.main {
+  background-image: url(../images/main/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .main__box {
+  display: flex;
+  flex-direction: column;
+  padding-block: 490px 60px;
+}
+.main .main__box .main__box-titel {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-padding-after: 10px;
+          padding-block-end: 10px;
+}
+.main .main__box .main__box-info {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+  -webkit-padding-after: 10px;
+          padding-block-end: 10px;
+}
+.main .main__box .main__box-info-date {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: hsl(0deg, 0%, 100%);
+}
+.main .main__box .main__box-info-date span {
+  color: hsl(0deg, 0%, 71%);
+}/*# sourceMappingURL=style.css.map */
