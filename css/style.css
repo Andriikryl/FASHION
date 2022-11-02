@@ -499,4 +499,77 @@ select {
   color: hsl(39deg, 46%, 61%);
 }
 
-/**SIDEBAR-CARD-STYLE**//*# sourceMappingURL=style.css.map */
+/**SIDEBAR-CARD-STYLE**/
+.inst {
+  -webkit-padding-after: 100px;
+          padding-block-end: 100px;
+}
+.inst .inst__titel {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #171717;
+  -webkit-padding-after: 40px;
+          padding-block-end: 40px;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+          mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+}
+
+.inst__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 21px;
+  min-width: 100%;
+  -webkit-animation: scroll-x 60s linear infinite;
+          animation: scroll-x 60s linear infinite;
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
+}
+
+@-webkit-keyframes scroll-x {
+  from {
+    transform: translateX 0;
+  }
+  to {
+    transform: translateX(calc(-100% - 21px));
+  }
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX 0;
+  }
+  to {
+    transform: translateX(calc(-100% - 21px));
+  }
+}
+@-webkit-keyframes scroll-y {
+  from {
+    transform: translateY 0;
+  }
+  to {
+    transform: translateY calc(-100% - 21px);
+  }
+}
+@keyframes scroll-y {
+  from {
+    transform: translateY 0;
+  }
+  to {
+    transform: translateY calc(-100% - 21px);
+  }
+}/*# sourceMappingURL=style.css.map */
