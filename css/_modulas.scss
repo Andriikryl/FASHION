@@ -5,3 +5,9 @@
     margin-inline: auto;
 }
 
+.container-header{
+    $max-width: 1750px;
+    $padding: 1rem;
+    width: min($max-width, 100% - $padding);
+    margin-inline: auto;
+}
